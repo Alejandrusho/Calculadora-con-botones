@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <nav class="flex flex-col items-center justify-center p-6 bg-cyan-600 text-white">
+        <h1 class="font-extrabold text-xl md:text-3xl">Alejandrusho</h1>
+    </nav>
+    <h2 class="flex flex-col items-center justify-center p-4 space-y-8 font-semibold">Calculadora cool 2.0</h2>
+    <p class="bg-zinc-900 flex flex-col items-center justify-center text-xl text-white px-4 py-8" id="calculo"></p>
+    <div class="bg-zinc-900 grid grid-cols-4 gap-4 py-8">
+        <div class="flex items-center justify-start flex-col space-y-8">
+            <button onclick="borradoTotal('C')" class="border border-orange-600 p-2 rounded-full font-semibold text-orange-600">AC</button>
+            <button onclick="calculadora('7')" class="border border-orange-600 text-white p-2 rounded-full">7</button>
+            <button onclick="calculadora('4')" class="border border-orange-600 text-white p-2 rounded-full">4</button>
+            <button onclick="calculadora('1')" class="border border-orange-600 text-white p-2 rounded-full">1</button>
+            <button onclick="calculadora('0')" class="border border-orange-600 text-white p-2 rounded-full">0</button>
+        </div>
+        <div class="flex items-center justify-start flex-col space-y-8">
+            <button onclick="remove('')" class="border border-orange-600 p-2 rounded-full font-semibold text-orange-600">C</button>
+            <button onclick="calculadora('8')" class="border border-orange-600 text-white p-2 rounded-full">8</button>
+            <button onclick="calculadora('5')" class="border border-orange-600 text-white p-2 rounded-full">5</button>
+            <button onclick="calculadora('2')" class="border border-orange-600 text-white p-2 rounded-full">2</button>
+        </div>
+        <div class="flex items-center justify-start flex-col space-y-8">
+            <button onclick="calculadora('**')" class="border border-orange-600 p-2 rounded-full font-semibold text-orange-600">**</button>
+            <button onclick="calculadora('9')" class="border border-orange-600 text-white p-2 rounded-full">9</button>
+            <button onclick="calculadora('6')" class="border border-orange-600 text-white p-2 rounded-full">6</button>
+            <button onclick="calculadora('3')" class="border border-orange-600 text-white p-2 rounded-full">3</button>
+            <button onclick="calculadora('.')" class="border border-orange-600 text-white p-2 rounded-full font-semibold text-orange-600">.</button>
+        </div>
+        <div class="flex items-center justify-start flex-col space-y-8">
+            <button onclick="calculadora('/')" class="border border-orange-600 p-2 rounded-full font-semibold text-orange-600">/</button>
+            <button onclick="calculadora('*')" class="border border-orange-600 p-2 rounded-full font-semibold text-orange-600">*</button>           
+            <button onclick="calculadora('-')" class="border border-orange-600 p-2 rounded-full font-semibold text-orange-600">-</button>
+            <button onclick="calculadora('+')" class="border border-orange-600 p-2 rounded-full font-semibold text-orange-600">+</button>
+            <button onclick="resultado('')" class="bg-orange-600 p-2 rounded-full font-semibold text-white">=</button>      
+        </div>
+    </div>
+    <footer class="flex flex-col justify-center items-center md:flex-row md:justify-between p-6 bg-cyan-600 text-white mt-12">
+        <p>Copyright 2022 All rights reserved</p>
+        <p>Alejandrusho</p>
+        <p>Contact: josealejandrodev@gmail.com</p>
+    </footer>
+</body>
+<script src="calculadorabotones.js"></script>
+</html>
